@@ -378,11 +378,8 @@ async def shazam(
             #     )
             #    order.append(ordr)
             
-             return {
-               "obj": '' 
-            }
 
-            return {
+             return {
                 "trade": True,
                 "current_price": current_price,
                 "levels": levels_data,
