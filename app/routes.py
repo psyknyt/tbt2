@@ -368,18 +368,18 @@ async def shazam(
 
             order = []
             for i in selected:
-            #    ordr = await api.place_order(
-            #         {
-            #             "product_id": i["product_id"],
-            #             "size": quantity,
-            #             "side": "buy",
-            #             "order_type": "market_order",
-            #         }
-            #     )
-            #    order.append(ordr)
+               ordr = await api.place_order(
+                    {
+                        "product_id": i["product_id"],
+                        "size": quantity,
+                        "side": "buy",
+                        "order_type": "market_order",
+                    }
+                )
+               order.append(ordr)
             
 
-             return {
+            return {
                 "trade": True,
                 "current_price": current_price,
                 "levels": levels_data,
